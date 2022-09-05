@@ -11,6 +11,8 @@ public interface TaskService {
 
     TaskDTO createTask(TaskDTO taskDTO);
 
+    TaskDTO updateTask(TaskDTO taskDTO);
+
 
 
     Boolean deleteTask(Long id);

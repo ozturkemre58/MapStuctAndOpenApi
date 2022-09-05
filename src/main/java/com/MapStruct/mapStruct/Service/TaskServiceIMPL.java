@@ -37,7 +37,14 @@ public class TaskServiceIMPL implements TaskService{
         return taskDTO;
     }
 
+    @Override
+    public TaskDTO updateTask(TaskDTO taskDTO) {
 
+           Task task = taskRepository.save(taskMapper.DtoToModel(taskDTO));
+
+        return taskDTO;
+
+    }
 
 
     @Override
